@@ -1,6 +1,11 @@
 let pilotName = prompt('Qual seu nome, piloto?')
 let velocity = 0
 let newVelocity = prompt('A que velocidade você gostaria de acelerar?')
+
+if (newVelocity < 0) {
+  newVelocity = 0
+}
+
 let confirmVelocity = confirm('Estamos acelerando para ' + newVelocity + 'km/s')
 
 if (confirmVelocity) {
